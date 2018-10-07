@@ -107,7 +107,7 @@ class OIDCProvider(OAuth2Provider):
             'id': user_data.get('sub'),
             'email': user_info.get('email'),
             'email_verified': user_info.get('email_verified'),
-            'nickname': user_info.get('nickname'),
-            'name': user_info.get('name'),
+            'nickname': user_info.get('name'),
+            'name': user_info.get('preferred_username'),
             'data': self.get_oauth_data(data),
         }
